@@ -1,8 +1,8 @@
 package com.example.kotlinproject
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class Splash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,9 +11,10 @@ class Splash : AppCompatActivity() {
 
         val handler = android.os.Handler()
             handler.postDelayed({
-                val intent = Intent(baseContext, MainActivity::class.java)
+                val intent = Intent(baseContext, Login::class.java)
                 startActivity(intent)
                 finish()
-            }, 5000)
+            }, 1000)
+
     }
 }
